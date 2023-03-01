@@ -4,5 +4,5 @@ docker run --rm -it --mount type=bind,source=/tmp/kubespray/elisoft-cluster,dst=
   --mount type=bind,source=/tmp/.ssh/id_rsa,dst=/home/sysadmin/.ssh/id_rsa \
   quay.io/kubespray/kubespray:v2.16.0 bash
 
-ansible-playbook -i /inventory/host.ini cluster.yml --user=sysadmin --ask-pass --become --ask-become-pass
+ansible-playbook -i /inventory/host.ini cluster.yml --user=root --ask-pass --become --ask-become-pass
 
